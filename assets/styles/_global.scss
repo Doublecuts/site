@@ -1,0 +1,317 @@
+*{
+  margin: 0;
+  padding: 0;
+  background: none;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  font-family: "Ubuntu";
+  color: $black;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  transition: 0.3s;
+}
+
+body{
+  background: #F6F6F6;
+  min-width: 360px;
+  width: 100%;
+}
+
+a, button{
+  cursor: pointer;
+}
+
+h2{
+  font-size: 64px;
+  line-height: 1.2;
+  font-family: "Rostov";
+
+  &.white{
+    color: white;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 40px;
+  }
+}
+
+.text{
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: 400;
+
+  &-title{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    color: $black;
+  }
+}
+
+.section{
+  max-width: 1260px;
+  padding: 160px 10px 0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+
+  @media (max-width: 768px) {
+    padding: 80px 20px 0;
+    gap: 16px;
+  }
+
+  &.custom{}
+}
+
+.custom-back{
+  position: relative;
+  z-index: 1;
+  white-space: nowrap;
+
+  span{
+    position: absolute;
+    width: calc(100% + 6px);
+    height: calc(100% + 6px);
+    background: $pink;
+    left: -3px;
+    z-index: -1;
+    transform: rotate(-3deg);
+    top: 0px;
+  }
+
+  &.purple{
+    color: white;
+
+    span{
+      position: absolute;
+      width: calc(100% + 4px);
+      height: calc(100% + 8px);
+      background: $purple;
+      left: -1px;
+      z-index: -1;
+      transform: rotate(-3deg);
+      top: -3px;
+    }
+  }
+}
+
+.black{
+  background: $black;
+  position: relative;
+
+  .marquee{
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+    user-select: none;
+    position: absolute;
+    top: -40px;
+    width: 100%;
+    background: $purple;
+    border-top: 3px dashed black;
+    border-bottom: 3px dashed black;
+    transform: rotate(2deg);
+    padding: 5px 0;
+
+    &.next{
+      transform: rotate(-2deg);
+    }
+
+    &__item{
+      flex-shrink: 0;
+      display: flex;
+      justify-content: space-around;
+      min-width: 100%;
+      gap: 20px;
+      animation: scroll 50s linear infinite;
+
+      &.reverse{
+        animation-direction: reverse;
+      }
+
+      &-text{
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 32px;
+        color: white;
+        float: left;
+        white-space: nowrap;
+      }
+    }
+
+    @keyframes scroll {
+      from {
+        transform: translateX(0);
+      }
+      to {
+        transform: translateX(calc(-100% - 20px));
+      }
+    }
+  }
+}
+
+.full-width{
+  width: 100%;
+  display: block;
+}
+
+.button-outline{
+  margin-top: 12px;
+  font-size: 16px;
+  line-height: 1.2;
+  color: $black;
+  border: 1px solid $purple;
+  padding: 13px 0;
+  border-radius: 8px;
+  width: 100%;
+  text-align: center;
+
+  &:hover{
+    background: $purple;
+    color: white;
+  }
+}
+
+.tab{
+  &-gray span{
+    font-size: 16px;
+    font-weight: 400;
+    color: #909090;
+  }
+
+  &-border{
+    border-bottom: 1px solid #FFFFFF80;
+    border-radius: 0;
+  }
+
+  &-border-price {
+    @media (max-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      border: none;
+      padding-bottom: 10px;
+      height: unset !important;
+      gap: 5px;
+    }
+  }
+
+  &-border-pink{
+    border-bottom: 1px solid $pink;
+    border-radius: 0;
+  }
+
+  &-color span{
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  &-purple span{
+    color: $purple;
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  &-bg div{
+    background: white;
+    height: 1px;
+    bottom: -4px;
+    position: absolute;
+  }
+
+  &-bg-purple div{
+    background: $purple;
+    height: 1px;
+    bottom: -4px;
+    position: absolute;
+  }
+
+  &-width{
+    width: 100%;
+    max-width: 441px;
+  }
+
+  &-full{
+    width: 100%;
+  }
+}
+
+.button-toggle{
+  font-size: 16px;
+  line-height: 1.2;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px 0;
+  background: $purple;
+  border-radius: 8px;
+  margin: 0 auto;
+  width: 233px;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+
+  &.transform svg{
+    transform: rotate(180deg);
+  }
+
+  svg path{
+    transition: 0.3s;
+  }
+
+  &:hover{
+    background: $pink;
+    color: $black;
+
+    svg path{
+      stroke: $black;
+    }
+  }
+}
+
+.slide-enter-active {
+  transition: 0.3s max-height ease-in;
+}
+
+.slide-leave-active {
+  transition: 0.3s max-height cubic-bezier(0, 1, 0.5, 1);
+}
+
+.slide-enter-to, .slide-leave-from {
+  max-height: var(--max-height, 1000px);
+  overflow: hidden;
+}
+
+.slide-enter-from, .slide-leave-to {
+  overflow: hidden;
+  max-height: 0;
+}
+
+.nested-enter-active,
+.nested-leave-active{
+  transition: all 1s ease-in-out;
+}
+
+.nested-enter-from,
+.nested-leave-to {
+  opacity: 0;
+}
+
+.body-hidden{
+  overflow: hidden;
+}
+
+#school{
+  padding: 70px 0 80px;
+  margin: 90px 0 80px;
+
+  @media (max-width: 768px) {
+    padding: 40px 20px;
+  }
+}
