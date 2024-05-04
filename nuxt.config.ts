@@ -10,9 +10,6 @@ export default defineNuxtConfig({
     modules: ['navigation']
   },
 
-  ssr: false,
-
-  app: {
-    baseURL: '/barbershop/'
-  },
+  target: 'static',
+  ssr: true,
 })

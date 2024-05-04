@@ -22,7 +22,7 @@ jobs:
         run: npm install
 
       - name: Build
-        run: npm run build
+        run: npm run generate
 
       - name: Clear target directory
         uses: appleboy/ssh-action@master
