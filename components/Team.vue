@@ -1,4 +1,11 @@
 <script setup lang="ts">
+import teamSergey from '../public/img/employers/sergey.jpg'
+import teamMichael from '../public/img/employers/michael.jpg'
+import teamAlexander from '../public/img/employers/alexander.jpg'
+import teamVlad from '../public/img/employers/vlad.jpg'
+import teamDmitriy from '../public/img/employers/dmitriy.jpg'
+import teamEvgeniy from '../public/img/employers/evgeniy.jpg'
+
 const tabs = ref([
   {
     key: 'master',
@@ -8,28 +15,28 @@ const tabs = ref([
         name: 'Сергей',
         post: 'Младший барбер',
         exp: 'Более 1 года',
-        src: `${window.location}/img/employers/sergey.jpg`,
+        src: teamSergey,
         href: 'https://n748041.yclients.com/company/704044/personal/select-services?o=m2862252',
       },
       {
         name: 'Михаил',
         post: 'Барбер',
         exp: 'Более 2 лет',
-        src: `${window.location}/img/employers/michael.jpg`,
+        src: teamMichael,
         href: 'https://n748041.yclients.com/company/704044/personal/select-services?o=m2612541',
       },
       {
         name: 'Александр',
         post: 'Старший барбер',
         exp: 'Более 4 лет',
-        src: `${window.location}/img/employers/alexander.jpg`,
+        src: teamAlexander,
         href: 'https://n748041.yclients.com/company/704044/personal/select-services?o=m2334511',
       },
       {
         name: 'Владислав',
         post: 'Старший барбер',
         exp: 'Более 4 лет',
-        src: `${window.location}/img/employers/vlad.jpg`,
+        src: teamVlad,
         href: 'https://n748041.yclients.com/company/704044/personal/select-services?o=m2726996',
       },
     ]
@@ -42,14 +49,14 @@ const tabs = ref([
         name: 'Дмитрий',
         post: 'Шеф-барбер',
         exp: 'Более 4 лет',
-        src: '/img/employers/dmitriy.jpg',
+        src: teamDmitriy,
         href: 'https://n748041.yclients.com/company/704044/personal/select-services?o=m2035999',
       },
       {
         name: 'Евгений',
         post: 'Шеф-барбер',
         exp: 'Более 4 лет',
-        src: '/img/employers/evgeniy.jpg',
+        src: teamEvgeniy,
         href: 'https://n748041.yclients.com/company/704044/personal/select-services?o=m2375171',
       },
     ]

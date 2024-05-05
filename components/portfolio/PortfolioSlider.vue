@@ -2,28 +2,28 @@
 const mySwiper = ref(null)
 const images = ref<{ src: string }[]>([
   {
-    src: `${window.location}/img/portfolio-big.png`
+    src: 'portfolio-big.png'
   },
   {
-    src: `${window.location}/img/portfolio-small.png`
+    src: 'portfolio-small.png'
   },
   {
-    src: `${window.location}/img/portfolio-big.png`
+    src: 'portfolio-big.png'
   },
   {
-    src: `${window.location}/img/portfolio-small.png`
+    src: 'portfolio-small.png'
   },
   {
-    src: `${window.location}/img/portfolio-big.png`
+    src: 'portfolio-big.png'
   },
   {
-    src: `${window.location}/img/portfolio-small.png`
+    src: 'portfolio-small.png'
   },
   {
-    src: `${window.location}/img/portfolio-big.png`
+    src: 'portfolio-big.png'
   },
   {
-    src: `${window.location}/img/portfolio-small.png`
+    src: 'portfolio-small.png'
   },
 ])
 
@@ -59,7 +59,7 @@ defineExpose({
         v-for="(item, index) in images"
         :key="index"
     >
-      <img class="portfolio-swiper__slide" :src="item.src" alt="">
+      <img class="portfolio-swiper__slide" :src="`../assets/img/${item.src}`" alt="">
     </SwiperSlide>
   </Swiper>
 </template>

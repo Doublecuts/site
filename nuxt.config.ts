@@ -10,6 +10,5 @@ export default defineNuxtConfig({
     modules: ['navigation']
   },
 
-  target: 'static',
   ssr: true,
 })
