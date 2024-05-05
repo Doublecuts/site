@@ -28,10 +28,10 @@ jobs:
           cache: 'npm'
 
       - name: Install dependencies
-        run: npm install
+        run: ls -al node_modules && npm install
 
       - name: Build
-        run: npm run generate
+        run: ls -al .nuxt && npm run generate
 
       - name: Clear target directory
         uses: appleboy/ssh-action@master
