@@ -34,7 +34,7 @@ jobs:
           script: rm -rf /www/*
 
       - name: Archive dist
-        run: cd dist && tar -cvf ../dist.tar *
+        run: tar -cvf dist.tar -C dist .
 
       - name: Deploy to Server
         uses: appleboy/scp-action@master
