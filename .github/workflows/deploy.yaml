@@ -53,4 +53,7 @@ jobs:
           username: ${{ vars.USERNAME }}
           password: ${{ secrets.PASSWORD }}
           port: 22
-          script: cd /www && tar -xvf dist.tar && rm dist.tar
+          script: >
+            cd /www && tar -xvf dist.tar
+            && rm dist.tar
+            && chown -R root:root /www
