@@ -33,6 +33,9 @@ jobs:
           port: 22
           script: rm -rf /www/*
 
+      - name: Debug print
+        run: ls -al dist/
+
       - name: Deploy to Server
         uses: appleboy/scp-action@master
         with:
@@ -40,5 +43,5 @@ jobs:
           username: ${{ vars.USERNAME }}
           password: ${{ secrets.PASSWORD }}
           port: 22
-          source: dist/*
+          source: ./dist/*
           target: /www/
