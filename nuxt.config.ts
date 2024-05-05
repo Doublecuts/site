@@ -4,7 +4,7 @@ export default defineNuxtConfig({
 
   css: ["~/assets/styles/app.scss"],
 
-  modules: ['nuxt-swiper', '@nuxt/ui'],
+  modules: ['nuxt-swiper', '@nuxt/ui', '@nuxtjs/color-mode'],
 
   swiper: {
     modules: ['navigation']
