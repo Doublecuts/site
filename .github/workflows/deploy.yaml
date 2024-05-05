@@ -17,7 +17,9 @@ jobs:
       - name: Cache Nuxt Build
         uses: actions/cache@v4.0.2
         with:
-          path: .nuxt
+          path: |
+            .nuxt
+            node_modules
           key: "${{ runner.os }}-build-${{ hashFiles('**/package-lock.json') }}"
           restore-keys: "${{ runner.os }}-build-"
 
@@ -28,10 +30,10 @@ jobs:
           cache: 'npm'
 
       - name: Install dependencies
-        run: ls -al node_modules && npm install
+        run: ls -al node_modules || true && npm install
 
       - name: Build
-        run: ls -al .nuxt && npm run generate
+        run: ls -al .nuxt || true && npm run generate
 
       - name: Clear target directory
         uses: appleboy/ssh-action@master
