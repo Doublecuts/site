@@ -59,7 +59,7 @@ defineExpose({
         v-for="(item, index) in images"
         :key="index"
     >
-      <img class="portfolio-swiper__slide" :src="`../assets/img/${item.src}`" alt="">
+      <img class="portfolio-swiper__slide" :src="`/img/${item.src}`" alt="">
     </SwiperSlide>
   </Swiper>
 </template>
