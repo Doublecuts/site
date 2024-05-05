@@ -41,16 +41,47 @@ const navLinks = ref<{ name: string, url: string }[]>([
     url: '#contacts',
   },
 ])
+const isOpen = ref(false)
+const isMobile = ref(false)
+
+const openHandler = () => {
+  isOpen.value = !isOpen.value
+  isMobile.value = !isMobile.value
+
+  if (isOpen.value) {
+    document.querySelector('body').classList.add('body-hidden')
+  } else {
+    document.querySelector('body').classList.remove('body-hidden')
+  }
+}
+
+const linkClickHandler = () => {
+  isMobile.value = false
+  isOpen.value = false
+  document.querySelector('body').classList.remove('body-hidden')
+}
 </script>
 
 <template>
-  <header class="header">
+  <header
+      class="header"
+      :style="isOpen ? 'background: #848484' : 'background: #11111166; border-radius: 0 0 12px 12px;'"
+  >
     <div class="header-inner">
       <NuxtLink class="header-inner__logo" to="/">
         <img src="~/assets/img/logo.png" alt="">
       </NuxtLink>
-      <nav class="nav">
-        <NuxtLink class="nav__item text" v-for="link in navLinks" :to="link.url">
+      <nav
+          class="nav"
+          :style="isMobile ? 'left: 0' : 'left: 100vh'"
+      >
+        <h2 class="nav__mobile white">Меню</h2>
+        <NuxtLink
+            class="nav__item text"
+            v-for="link in navLinks"
+            :to="link.url"
+            @click="linkClickHandler"
+        >
           {{ link.name }}
         </NuxtLink>
       </nav>
@@ -78,6 +109,12 @@ const navLinks = ref<{ name: string, url: string }[]>([
         >
           <img src="~/assets/img/phone.svg" alt="">
         </NuxtLink>
+        <img
+            class="mobile-burger"
+            :src="isOpen ? '/img/close.svg' : '/img/menu.svg'"
+            alt=""
+            @click="openHandler"
+        >
       </div>
     </div>
   </header>
@@ -91,14 +128,21 @@ const navLinks = ref<{ name: string, url: string }[]>([
   top: 0;
   left: 0;
   width: 100%;
-  background: #11111166;
   padding: 9px 10px 5px;
-  z-index: 100;
+  z-index: 10;
   backdrop-filter: blur(10px);
+  transition: 0.3s;
 
   @media (max-width: 768px) {
     padding: 2px 12px;
-    border-radius: 0 0 12px 12px;
+  }
+
+  .mobile-burger {
+    display: none;
+
+    @media (max-width: 768px) {
+      display: block;
+    }
   }
 
   &-inner{
@@ -115,7 +159,23 @@ const navLinks = ref<{ name: string, url: string }[]>([
       gap: 4px;
 
       @media (max-width: 768px) {
+        position: fixed;
+        background: #848484;
+        top: 80px;
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 28px 20px;
+        height: calc(100vh - 70px);
+        transition: 0.3s;
+      }
+
+      &__mobile {
         display: none;
+
+        @media (max-width: 768px) {
+          display: block;
+        }
       }
 
       &__item{

@@ -25,28 +25,43 @@ const setMaxHeight = (el: any) => {
       <div class="event">
         <img class="event__image" src="../assets/img/event.jpg" alt="">
         <div class="event__info">
-          <p class="event__info-title text-title">Скидка <span class="custom-back">15%<span></span></span> для новых клиентов</p>
-          <p class="text">Дарим скидку  для новых гостей барбершопа.
-            Не суммируется с другими акциями, комплексами</p>
-          <button class="button-outline">Узнать подробнее</button>
+          <p class="event__info-title text-title">Скидка на первый визит <span class="custom-back">20%<span></span></span></p>
+          <p class="text">Дарим скидку  для новых гостей барбершопа</p>
+          <NuxtLink
+              class="button-outline"
+              to="https://vk.com/double_cuts_vrn?w=wall-204363189_294"
+              target="_blank"
+          >
+            Узнать подробнее
+          </NuxtLink>
         </div>
       </div>
       <div class="event">
         <img class="event__image" src="../assets/img/event.jpg" alt="">
         <div class="event__info">
-          <p class="event__info-title text-title">Скидка <span class="custom-back">15%<span></span></span> для новых клиентов</p>
-          <p class="text">Дарим скидку  для новых гостей барбершопа.
-            Не суммируется с другими акциями, комплексами</p>
-          <button class="button-outline">Узнать подробнее</button>
+          <p class="event__info-title text-title">Скидка за отзыв <span class="custom-back">20%<span></span></span></p>
+          <p class="text">Оставь отзыв после визита и получи скидку</p>
+          <NuxtLink
+              class="button-outline"
+              to="https://vk.com/double_cuts_vrn?w=wall-204363189_294"
+              target="_blank"
+          >
+            Узнать подробнее
+          </NuxtLink>
         </div>
       </div>
       <div class="event">
         <img class="event__image" src="../assets/img/event.jpg" alt="">
         <div class="event__info">
-          <p class="event__info-title text-title">Скидка <span class="custom-back">15%<span></span></span> для новых клиентов</p>
-          <p class="text">Дарим скидку  для новых гостей барбершопа.
-            Не суммируется с другими акциями, комплексами</p>
-          <button class="button-outline">Узнать подробнее</button>
+          <p class="event__info-title text-title">День рождения</p>
+          <p class="text">Получите подарок от нас в день рождения</p>
+          <NuxtLink
+              class="button-outline"
+              to="https://vk.com/double_cuts_vrn?w=wall-204363189_294"
+              target="_blank"
+          >
+            Узнать подробнее
+          </NuxtLink>
         </div>
       </div>
     </div>
@@ -58,34 +73,22 @@ const setMaxHeight = (el: any) => {
         <div class="event">
           <img class="event__image" src="../assets/img/event.jpg" alt="">
           <div class="event__info">
-            <p class="event__info-title text-title">Скидка <span class="custom-back">15%<span></span></span> для новых клиентов</p>
-            <p class="text">Дарим скидку  для новых гостей барбершопа.
-              Не суммируется с другими акциями, комплексами</p>
-            <button class="button-outline">Узнать подробнее</button>
-          </div>
-        </div>
-        <div class="event">
-          <img class="event__image" src="../assets/img/event.jpg" alt="">
-          <div class="event__info">
-            <p class="event__info-title text-title">Скидка <span class="custom-back">15%<span></span></span> для новых клиентов</p>
-            <p class="text">Дарим скидку  для новых гостей барбершопа.
-              Не суммируется с другими акциями, комплексами</p>
-            <button class="button-outline">Узнать подробнее</button>
-          </div>
-        </div>
-        <div class="event">
-          <img class="event__image" src="../assets/img/event.jpg" alt="">
-          <div class="event__info">
-            <p class="event__info-title text-title">Скидка <span class="custom-back">15%<span></span></span> для новых клиентов</p>
-            <p class="text">Дарим скидку  для новых гостей барбершопа.
-              Не суммируется с другими акциями, комплексами</p>
-            <button class="button-outline">Узнать подробнее</button>
+            <p class="event__info-title text-title">Скидка за рекламу <span class="custom-back">10%<span></span></span></p>
+            <p class="text">Прорекламируй нас в социальных сетях и получи скидку</p>
+            <NuxtLink
+                class="button-outline"
+                to="https://vk.com/double_cuts_vrn?w=wall-204363189_294"
+                target="_blank"
+            >
+              Узнать подробнее
+            </NuxtLink>
           </div>
         </div>
       </div>
     </transition>
-    <button
+    <NuxtLink
         class="button-toggle"
+        :to="show ? '#events' : ''"
         @click="toggle"
         :class="{transform: show}"
     >
@@ -93,7 +96,7 @@ const setMaxHeight = (el: any) => {
         <path d="M6.5 9L12.5 15L18.5 9" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
       </svg>
       {{ buttonValue }}
-    </button>
+    </NuxtLink>
   </section>
 </template>
 
@@ -115,11 +118,13 @@ const setMaxHeight = (el: any) => {
     }
 
     .event{
+      position: relative;
+
       &__image{
         border-radius: 12px 12px 0 0;
-        object-fit: cover;
+        object-fit: fill;
         width: 400px;
-        height: 200px;
+        height: 150px;
         z-index: 1;
         position: relative;
 
@@ -135,7 +140,7 @@ const setMaxHeight = (el: any) => {
         background: white;
         border-radius: 12px;
         padding: 24px 20px 28px;
-        margin-top: -20px;
+        margin-top: -10px;
         z-index: 2;
         position: relative;
         border: 1px solid #e9e9e9;

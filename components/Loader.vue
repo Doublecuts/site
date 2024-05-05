@@ -39,7 +39,7 @@ onMounted(() => {
   width: 100%;
   height: 100%;
   background: linear-gradient(to right, #654ea3, #eaafc8);
-  z-index: 100;
+  z-index: 10;
   display: flex;
 }
 #loader{

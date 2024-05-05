@@ -1,6 +1,6 @@
 <script setup lang="ts">
 useSeoMeta({
-  title: 'Doublecuts - барбершоп'
+  title: 'Double cuts - барбершоп'
 })
 </script>
 

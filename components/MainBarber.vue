@@ -6,11 +6,12 @@
   <section class="main-barber">
     <img src="../assets/img/main_back_mobile.jpg" alt="" class="main-barber__mobile">
     <div class="main-barber__text">
-      <h1 class="main-barber__text-title">
+      <h1 class="main-barber__text-main">Барбершоп Double cuts</h1>
+      <h2 class="main-barber__text-title">
         <span class="main-barber__text-title_big">СКИДКА 20%</span>
         <span class="main-barber__text-title_small">На первое посещение барбершопа</span>
         <span class="main-barber__text-title_small adaptive">На первое посещение</span>
-      </h1>
+      </h2>
     </div>
     <div class="main-barber__pictures">
       <img src="../assets/img/main1.png" alt="" class="main-barber__pictures-item">
@@ -116,6 +117,11 @@
     @media (max-width: 768px) {
       padding: 0 20px;
       margin: 0 auto;
+    }
+
+    &-main {
+      visibility: hidden;
+      position: absolute;
     }
 
     &-title{
@@ -262,7 +268,7 @@
     bottom: 20px;
     margin-left: -211px;
     left: 50%;
-    z-index: 100;
+    z-index: 10;
     background: $black;
 
     @media (max-width: 430px) {
@@ -270,6 +276,7 @@
       left: 0;
       width: 100%;
       max-width: 430px;
+      bottom: 0;
     }
 
     &-order{
@@ -297,9 +304,13 @@
         }
       }
 
-      &:hover{
+      &:hover {
         background: $purple;
         color: white;
+
+        &_desktop {
+          color: white;
+        }
       }
     }
 

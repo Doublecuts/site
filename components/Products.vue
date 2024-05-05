@@ -134,16 +134,17 @@ const setMaxHeight = (el: any) => {
         </NuxtLink>
       </div>
     </transition>
-    <button
+    <NuxtLink
         class="button-toggle"
         @click="toggle"
         :class="{transform: show}"
+        :to="show ? '#products' : ''"
     >
       <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M6.5 9L12.5 15L18.5 9" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
       </svg>
       {{ buttonValue }}
-    </button>
+    </NuxtLink>
   </section>
 </template>
 
