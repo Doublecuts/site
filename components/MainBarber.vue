@@ -94,6 +94,7 @@
   height: 100vh;
   background: url("~/assets/img/main_back.png") no-repeat center top/cover;
   display: flex;
+  overflow-x: hidden;
 
   @media (max-width: 768px){
     background: $black;
@@ -204,7 +205,7 @@
     user-select: none;
     position: absolute;
     bottom: 200px;
-    width: 100%;
+    width: calc(100% - 1px);
     background: $purple;
     border-top: 3px dashed black;
     border-bottom: 3px dashed black;

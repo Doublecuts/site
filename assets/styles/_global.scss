@@ -110,15 +110,25 @@ h2{
     user-select: none;
     position: absolute;
     top: -40px;
-    width: 100%;
+    width: calc(100% - 1px);
     background: $purple;
     border-top: 3px dashed black;
     border-bottom: 3px dashed black;
     transform: rotate(2deg);
     padding: 5px 0;
 
+    @media(max-width: 768px){
+      padding: 0;
+      transform: rotate(-5deg);
+      top: -30px;
+    }
+
     &.next{
       transform: rotate(-2deg);
+
+      @media(max-width: 768px){
+        transform: rotate(5deg);
+      }
     }
 
     &__item{
