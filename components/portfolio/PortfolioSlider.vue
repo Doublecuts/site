@@ -35,7 +35,7 @@ const images = ref<{ src: string }[]>([
     src: 'p11.jpg'
   },
   {
-    src: 'p12.jpeg'
+    src: 'p12.jpg'
   },
   {
     src: 'p13.jpg'
