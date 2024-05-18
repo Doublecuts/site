@@ -155,8 +155,13 @@ const setMaxHeight = (el: any) => {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
 
-    @media (max-width: 768px) {
+    @media (max-width: 570px) {
       grid-template-columns: 1fr;
+      width: 100%;
+    }
+
+    @media (min-width: 571px) and (max-width: 845px) {
+      grid-template-columns: 1fr 1fr;
     }
 
     .product{
@@ -175,6 +180,10 @@ const setMaxHeight = (el: any) => {
         height: 240px;
         object-fit: cover;
         border-radius: 12px 12px 0 0;
+
+        @media (max-width: 570px) {
+          width: 100%;
+        }
       }
 
       &__info{

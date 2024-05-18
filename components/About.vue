@@ -25,7 +25,7 @@
   padding-top: 120px;
 
   @media (max-width: 768px) {
-    padding-top: 30px;
+    margin-top: -90px;
   }
 
   &__block{

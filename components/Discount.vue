@@ -28,6 +28,10 @@
   margin: 40px auto 0;
   padding-top: 0;
 
+  @media (min-width: 769px) and (max-width: 1310px) {
+    padding: 10px;
+  }
+
   &__field{
     width: 100%;
     background: #EEE1FB;
@@ -37,18 +41,18 @@
     border-radius: 12px;
     position: relative;
 
-    @media (max-width: 768px) {
+    @media (max-width: 1310px) {
       padding: 20px 20px 24px;
     }
 
     &-title{
-      @media (max-width: 768px) {
+      @media (max-width: 1310px) {
         font-size: 20px;
       }
     }
 
     &-text{
-      @media (max-width: 768px) {
+      @media (max-width: 1310px) {
         max-width: 200px;
       }
     }
@@ -56,7 +60,7 @@
     &-button{
       margin: 48px 0 0 0;
 
-      @media (max-width: 768px) {
+      @media (max-width: 1310px) {
         margin-top: 20px;
       }
     }
@@ -66,7 +70,7 @@
       right: 0;
       bottom: -4px;
 
-      @media (max-width: 768px) {
+      @media (max-width: 1310px) {
         width: 100px;
         bottom: unset;
         top: -25px;

@@ -39,7 +39,7 @@ const sliderRef = ref()
   justify-content: space-between;
 
   @media (max-width: 768px) {
-    padding-top: 40px;
+    padding-top: 80px;
   }
 
   &__buttons{

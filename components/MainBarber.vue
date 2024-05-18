@@ -278,6 +278,7 @@
       width: 100%;
       max-width: 430px;
       bottom: 0;
+      border-radius: 12px 12px 0 0;
     }
 
     &-order{

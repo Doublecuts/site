@@ -111,6 +111,7 @@ const setMaxHeight = (el: any) => {
 
     @media (max-width: 570px) {
       grid-template-columns: 1fr;
+      width: 100%;
     }
 
     @media (min-width: 571px) and (max-width: 845px){
@@ -119,6 +120,10 @@ const setMaxHeight = (el: any) => {
 
     .event{
       position: relative;
+
+      @media (max-width: 570px) {
+        width: 100%;
+      }
 
       &__image{
         border-radius: 12px 12px 0 0;

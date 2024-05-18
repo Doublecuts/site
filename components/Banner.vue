@@ -36,7 +36,7 @@ const vacations = ref([
   max-width: 1240px;
   margin: 0 auto;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1310px) {
     padding: 80px 20px 0;
   }
 
@@ -55,7 +55,7 @@ const vacations = ref([
       align-items: stretch;
       gap: 12px;
 
-      @media (max-width: 768px) {
+      @media (max-width: 1310px) {
         flex-wrap: wrap;
       }
 
@@ -71,7 +71,7 @@ const vacations = ref([
       right: -30px;
       bottom: 0;
 
-      @media (max-width: 768px) {
+      @media (max-width: 1310px) {
         display: none;
       }
     }

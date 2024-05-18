@@ -50,7 +50,9 @@
 @import "assets/styles/colors";
 
 .contacts{
-  padding-top: 0;
+  @media (max-width: 768px) {
+    margin-top: -80px;
+  }
 }
 
 .map{

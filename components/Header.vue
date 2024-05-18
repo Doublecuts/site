@@ -73,7 +73,7 @@ const linkClickHandler = () => {
       </NuxtLink>
       <nav
           class="nav"
-          :style="isMobile ? 'left: 0' : 'left: 100vh'"
+          :style="isMobile ? 'left: 0' : 'left: 100vw'"
       >
         <h2 class="nav__mobile white">Меню</h2>
         <NuxtLink
@@ -133,14 +133,14 @@ const linkClickHandler = () => {
   backdrop-filter: blur(10px);
   transition: 0.3s;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1171px) {
     padding: 2px 12px;
   }
 
   .mobile-burger {
     display: none;
 
-    @media (max-width: 768px) {
+    @media (max-width: 1171px) {
       display: block;
     }
   }
@@ -158,14 +158,14 @@ const linkClickHandler = () => {
       align-items: center;
       gap: 4px;
 
-      @media (max-width: 768px) {
+      @media (max-width: 1171px) {
         position: fixed;
         background: #848484;
         top: 80px;
         width: 100%;
         flex-direction: column;
         align-items: flex-start;
-        padding: 28px 20px;
+        padding: 10px 20px;
         height: calc(100vh - 70px);
         transition: 0.3s;
       }
@@ -173,7 +173,7 @@ const linkClickHandler = () => {
       &__mobile {
         display: none;
 
-        @media (max-width: 768px) {
+        @media (max-width: 1171px) {
           display: block;
         }
       }
@@ -181,6 +181,10 @@ const linkClickHandler = () => {
       &__item{
         color: white;
         padding: 10px;
+
+        @media (max-width: 1171px) {
+          padding: 8px;
+        }
 
         &:hover{
           color: $purple;
@@ -193,7 +197,7 @@ const linkClickHandler = () => {
       align-items: center;
       gap: 8px;
 
-      @media (max-width: 768px) {
+      @media (max-width: 1171px) {
         gap: 10px;
       }
 
@@ -206,7 +210,7 @@ const linkClickHandler = () => {
         width: 40px;
         height: 40px;
 
-        @media (max-width: 768px) {
+        @media (max-width: 1171px) {
           width: 48px;
           height: 48px;
           border-radius: 14px;
