@@ -104,5 +104,7 @@ onMounted(() => {
   right: 0;
   top: 0;
   bottom: 0;
+  width: 76px;
+  height: 76px;
 }
 </style>

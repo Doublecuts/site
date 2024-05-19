@@ -39,7 +39,7 @@ const setMaxHeight = (el: any) => {
       <div class="event">
         <img class="event__image" src="../assets/img/event.jpg" alt="">
         <div class="event__info">
-          <p class="event__info-title text-title">Скидка за отзыв <span class="custom-back">20%<span></span></span></p>
+          <p class="event__info-title text-title">Скидка за отзыв до <span class="custom-back">20%<span></span></span></p>
           <p class="text">Оставь отзыв после визита и получи скидку</p>
           <NuxtLink
               class="button-outline"

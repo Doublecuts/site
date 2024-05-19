@@ -43,6 +43,8 @@ const navLinks = ref<{ name: string, url: string }[]>([
 ])
 const isOpen = ref(false)
 const isMobile = ref(false)
+const isSoundOn = ref(false)
+const soundRef = ref()
 
 const openHandler = () => {
   isOpen.value = !isOpen.value
@@ -52,6 +54,16 @@ const openHandler = () => {
     document.querySelector('body').classList.add('body-hidden')
   } else {
     document.querySelector('body').classList.remove('body-hidden')
+  }
+}
+
+const soundHandler = () => {
+  isSoundOn.value = !isSoundOn.value
+
+  if (soundRef.value.paused) {
+    soundRef.value.play()
+  } else {
+    soundRef.value.pause()
   }
 }
 
@@ -86,6 +98,16 @@ const linkClickHandler = () => {
         </NuxtLink>
       </nav>
       <div class="header-inner__links">
+        <div class="header-inner__links-item sound">
+          <img
+              :src="isSoundOn ? '/img/sound_on.svg' : '/img/sound_off.svg'"
+              alt=""
+              @click="soundHandler"
+          >
+        </div>
+        <audio ref="soundRef" controls loop>
+          <source src="../public/audio/doublecuts.mp3" type="audio/mpeg">
+        </audio>
         <NuxtLink
             class="header-inner__links-item"
             to="https://wa.me/79009332935"
@@ -133,15 +155,17 @@ const linkClickHandler = () => {
   backdrop-filter: blur(10px);
   transition: 0.3s;
 
-  @media (max-width: 1171px) {
+  @media (max-width: 1220px) {
     padding: 2px 12px;
   }
 
   .mobile-burger {
     display: none;
 
-    @media (max-width: 1171px) {
+    @media (max-width: 1220px) {
       display: block;
+      width: 40px;
+      height: 40px;
     }
   }
 
@@ -158,7 +182,7 @@ const linkClickHandler = () => {
       align-items: center;
       gap: 4px;
 
-      @media (max-width: 1171px) {
+      @media (max-width: 1220px) {
         position: fixed;
         background: #848484;
         top: 80px;
@@ -173,7 +197,7 @@ const linkClickHandler = () => {
       &__mobile {
         display: none;
 
-        @media (max-width: 1171px) {
+        @media (max-width: 1220px) {
           display: block;
         }
       }
@@ -182,7 +206,7 @@ const linkClickHandler = () => {
         color: white;
         padding: 10px;
 
-        @media (max-width: 1171px) {
+        @media (max-width: 1220px) {
           padding: 8px;
         }
 
@@ -192,13 +216,20 @@ const linkClickHandler = () => {
       }
     }
 
+    &__logo{
+      img{
+        width: 76px;
+        height: 76px;
+      }
+    }
+
     &__links{
       display: flex;
       align-items: center;
       gap: 8px;
 
-      @media (max-width: 1171px) {
-        gap: 10px;
+      @media (max-width: 1220px) {
+        gap: 5px;
       }
 
       &-item{
@@ -210,15 +241,30 @@ const linkClickHandler = () => {
         width: 40px;
         height: 40px;
 
-        @media (max-width: 1171px) {
-          width: 48px;
-          height: 48px;
-          border-radius: 14px;
+        @media (max-width: 1220px) {
+          width: 40px;
+          height: 40px;
+          border-radius: 12px;
           background: #0000001A;
 
           img{
-            width: 28px;
-            height: 28px;
+            width: 20px;
+            height: 20px;
+          }
+        }
+
+        &.sound{
+          background: $purple;
+          border-color: $purple;
+          animation: pulse 1.25s infinite cubic-bezier( 0.66, 0.33, 0, 1);
+          box-shadow: 0 0 0 0 rgba(#F0F0F0, 1), 0 0 0 0 rgba($purple, 0.7);
+          transform: translate3d(0,0,0);
+          cursor: pointer;
+
+          @keyframes pulse {
+            to {
+              box-shadow: 0 0 0 12px transparent, 0 0 0 24px rgba($purple,  0);
+            }
           }
         }
 

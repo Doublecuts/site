@@ -6,7 +6,7 @@
   <section class="discount">
     <div class="discount__field">
       <h2 class="discount__field-title">Для своих дешевле!</h2>
-      <p class="discount__field-text text">Записывайся в школу прямо сейчас и получи <span class="custom-back purple">скидку 10%<span></span></span></p>
+      <p class="discount__field-text text">Запишись до конца месяца, получи <span class="custom-back purple">скидку 10%<span></span></span></p>
       <NuxtLink
           class="discount__field-button button-toggle"
           to="https://vk.com/shkolabarberov_vrn"

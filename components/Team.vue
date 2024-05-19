@@ -47,14 +47,14 @@ const tabs = ref([
     data: [
       {
         name: 'Дмитрий',
-        post: 'Шеф-барбер',
+        post: '',
         exp: 'Более 4 лет',
         src: teamDmitriy,
         href: 'https://n748041.yclients.com/company/704044/personal/select-services?o=m2035999',
       },
       {
         name: 'Евгений',
-        post: 'Шеф-барбер',
+        post: '',
         exp: 'Более 4 лет',
         src: teamEvgeniy,
         href: 'https://n748041.yclients.com/company/704044/personal/select-services?o=m2375171',

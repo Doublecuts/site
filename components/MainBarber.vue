@@ -71,7 +71,7 @@
             to="https://go.2gis.com/v6p3a"
             target="_blank"
         >
-          <img src="../assets/img/google.png" alt="">
+          <img src="../assets/img/google.svg" alt="">
           5.0
         </NuxtLink>
         <NuxtLink
@@ -79,7 +79,7 @@
             to="https://yandex.ru/maps/-/CDRCV21A"
             target="_blank"
         >
-          <img src="../assets/img/yandex.png" alt="">
+          <img src="../assets/img/yandex.svg" alt="">
           5.0
         </NuxtLink>
       </div>
