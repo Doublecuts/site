@@ -71,7 +71,7 @@
             to="https://go.2gis.com/v6p3a"
             target="_blank"
         >
-          <img src="../assets/img/google.svg" alt="">
+          <img src="../assets/img/google.svg" alt="" style="width: 24px; height: 24px">
           5.0
         </NuxtLink>
         <NuxtLink
