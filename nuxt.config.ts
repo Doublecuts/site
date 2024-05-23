@@ -4,7 +4,14 @@ export default defineNuxtConfig({
 
   css: ["~/assets/styles/app.scss"],
 
-  modules: ['nuxt-swiper', '@nuxt/ui', '@nuxtjs/color-mode'],
+  modules: ['nuxt-swiper', '@nuxt/ui', '@nuxtjs/color-mode', 'nuxt-yandex-metrika'],
+
+  yandexMetrika: {
+    id: '97376726',
+    options: {
+      webvisor: true,
+    }
+  },
 
   swiper: {
     modules: ['navigation', 'autoplay', 'pagination']
