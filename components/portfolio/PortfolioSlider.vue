@@ -64,11 +64,13 @@ defineExpose({
 <template>
   <Swiper
       class="portfolio-swiper"
-      :modules="[SwiperNavigation]"
+      :modules="[SwiperNavigation, SwiperAutoplay]"
       :slides-per-view="1"
       :space-between="20"
       @swiper="onSwiper"
       :breakpoints="{570: {slidesPerView: 2}, 1000: {slidesPerView: 3}, 1200: {slidesPerView: 4}, 1400: {slidesPerView: 5}}"
+      autoplay
+      :loop="true"
   >
     <SwiperSlide
         v-for="(item, index) in images"

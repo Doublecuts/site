@@ -48,14 +48,14 @@ const tabs = ref([
       {
         name: 'Дмитрий',
         post: '',
-        exp: 'Более 4 лет',
+        exp: '',
         src: teamDmitriy,
         href: 'https://n748041.yclients.com/company/704044/personal/select-services?o=m2035999',
       },
       {
         name: 'Евгений',
         post: '',
-        exp: 'Более 4 лет',
+        exp: '',
         src: teamEvgeniy,
         href: 'https://n748041.yclients.com/company/704044/personal/select-services?o=m2375171',
       },
@@ -107,10 +107,10 @@ const ui = {
                   <p class="member__info-post text">{{ member.post }}</p>
                 </div>
                 <div class="member__exp">
-                  <p class="member__exp-text text">Опыт работы</p>
+                  <p v-if="member.exp" class="member__exp-text text">Опыт работы</p>
                   <p class="text">{{ member.exp }}</p>
                 </div>
-                <a :href="member.href" target="_blank" class="button-outline">Записаться к мастеру</a>
+                <a v-if="member.exp" :href="member.href" target="_blank" class="button-outline">Записаться к мастеру</a>
               </div>
             </div>
           </div>

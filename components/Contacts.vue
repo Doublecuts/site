@@ -38,7 +38,8 @@ const ui = {
       <UTabs :items="tabs" :ui="ui">
         <template #item="{ item }">
           <div class="map" v-if="item.key === 'barbershop'">
-            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae8b3e691b9290bc21606eadce14cbc804ce724e25c54462cc9f399885b98b77d&amp;source=constructor" width="100%" height="312" frameborder="0"></iframe>
+            <iframe class="map__desktop" src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae8b3e691b9290bc21606eadce14cbc804ce724e25c54462cc9f399885b98b77d&amp;source=constructor" width="100%" height="312" frameborder="0"></iframe>
+            <iframe class="map__mobile" src="https://yandex.ru/map-widget/v1/?um=constructor%3A92a4082950bdf949a48692e4ec9c3942799072b108de83c503250f7c90621504&amp;source=constructor" width="100%" height="312" frameborder="0"></iframe>
             <div class="see">
               <div class="see__block">
                 <p class="see__block-name text-title">Всегда рады вас видеть</p>
@@ -82,21 +83,21 @@ const ui = {
               <div class="owner-links">
                 <NuxtLink
                     class="owner-links__item"
-                    to="https://wa.me/79009332935"
+                    to="https://wa.me/79999139839"
                     target="_blank"
                 >
                   <img src="../assets/img/wa_gray.svg" alt="">
                 </NuxtLink>
                 <NuxtLink
                     class="owner-links__item"
-                    to="https://vk.com/double_cuts_vrn"
+                    to="https://vk.com/himmortal"
                     target="_blank"
                 >
                   <img src="../assets/img/vk_gray.svg" alt="">
                 </NuxtLink>
                 <NuxtLink
                     class="owner-links__item"
-                    to="https://www.instagram.com/barbershop_doublecuts?igsh=MW8wa3A3NmprbXBmMQ=="
+                    to="https://www.instagram.com/barber_cheresh?igsh=MTh5b3JjcGw0ejcybQ=="
                     target="_blank"
                 >
                   <img src="../assets/img/inst_gray.svg" alt="">
@@ -154,6 +155,22 @@ const ui = {
 
   @media (max-width: 768px) {
     height: 512px;
+  }
+
+  &__mobile{
+    display: none;
+
+    @media (max-width: 768px) {
+      display: block;
+    }
+  }
+
+  &__desktop{
+    display: block;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
 
   .see{

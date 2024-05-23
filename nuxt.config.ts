@@ -7,7 +7,7 @@ export default defineNuxtConfig({
   modules: ['nuxt-swiper', '@nuxt/ui', '@nuxtjs/color-mode'],
 
   swiper: {
-    modules: ['navigation']
+    modules: ['navigation', 'autoplay', 'pagination']
   },
 
   ssr: true,
