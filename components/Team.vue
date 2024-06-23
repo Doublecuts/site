@@ -5,12 +5,29 @@ import teamAlexander from '../public/img/employers/alexander.jpg'
 import teamVlad from '../public/img/employers/vlad.jpg'
 import teamDmitriy from '../public/img/employers/dmitriy.jpg'
 import teamEvgeniy from '../public/img/employers/evgeniy.jpg'
+import teamVadim from '../public/img/employers/vadim.png'
+import teamNikita from '../public/img/employers/nikita.png'
+import teamRoman from '../public/img/employers/roman.png'
 
 const tabs = ref([
   {
     key: 'master',
     label: 'Мастера',
     data: [
+      {
+        name: 'Вадим',
+        post: 'Младший барбер',
+        exp: 'Более 6 месяцев',
+        src: teamVadim,
+        href: 'https://n748041.yclients.com/company/704044/personal/select-services?o=m3113572',
+      },
+      {
+        name: 'Никита',
+        post: 'Младший барбер',
+        exp: 'Более 6 месяцев',
+        src: teamNikita,
+        href: 'https://n748041.yclients.com/company/704044/personal/select-services?o=m3098163',
+      },
       {
         name: 'Сергей',
         post: 'Младший барбер',
@@ -20,7 +37,7 @@ const tabs = ref([
       },
       {
         name: 'Михаил',
-        post: 'Барбер',
+        post: 'Старший барбер',
         exp: 'Более 2 лет',
         src: teamMichael,
         href: 'https://n748041.yclients.com/company/704044/personal/select-services?o=m2612541',
@@ -38,6 +55,13 @@ const tabs = ref([
         exp: 'Более 4 лет',
         src: teamVlad,
         href: 'https://n748041.yclients.com/company/704044/personal/select-services?o=m2726996',
+      },
+      {
+        name: 'Роман',
+        post: 'Старший барбер',
+        exp: 'Более 7 лет',
+        src: teamRoman,
+        href: 'https://n748041.yclients.com/company/704044/personal/select-services?o=m3241055',
       },
     ]
   },
@@ -140,7 +164,8 @@ const ui = {
 
     @media (max-width: 590px) {
       max-width: 100%;
-      overflow: scroll;
+      overflow-x: scroll;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     }
 
     @media (min-width: 591px) and (max-width: 900px) {

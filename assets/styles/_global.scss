@@ -225,9 +225,10 @@ h2{
   }
 
   &-purple span{
-    color: $purple;
+    color: white;
     font-weight: 400;
     font-size: 16px;
+    z-index: 2;
   }
 
   &-bg div{
@@ -237,11 +238,17 @@ h2{
     position: absolute;
   }
 
-  &-bg-purple div{
+  &-bg-purple{
     background: $purple;
-    height: 1px;
-    bottom: -4px;
-    position: absolute;
+    border-radius: 5px;
+    z-index: -1;
+
+    div{
+      background: $purple;
+      height: 1px;
+      bottom: -4px;
+      position: absolute;
+    }
   }
 
   &-width{

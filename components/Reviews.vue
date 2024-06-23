@@ -29,6 +29,12 @@ const yandexImages = ref<{ src: string, href: string }[]>([
 ])
 const instImages = ref<{ src: string }[]>([
   {
+    src: 'i1.png',
+  },
+  {
+    src: 'i2.png',
+  },
+  {
     src: '1.png',
   },
   {
