@@ -10,7 +10,7 @@ const isOpen = ref(false)
           <p class="name__title text-title">Double cuts барбершоп</p>
           <p class="name__text">Все права защищены</p>
           <p class="name__text">ИП Мальцев Дмитрий Андреевич</p>
-          <p class="name__text">ОГРНИП: 323460000039368</p>
+          <p class="name__text">ОГРНИП: 324460000023651</p>
           <p class="name__text">ИНН: 460802606324</p>
         </div>
         <div class="payment">
