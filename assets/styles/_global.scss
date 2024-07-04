@@ -337,3 +337,17 @@ h2{
     padding: 40px 20px;
   }
 }
+
+.modal__mobile {
+  min-height: unset !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.modal__pos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
