@@ -4,7 +4,7 @@ export default defineNuxtConfig({
 
   css: ["~/assets/styles/app.scss"],
 
-  modules: ['nuxt-swiper', '@nuxt/ui', '@nuxtjs/color-mode', 'nuxt-yandex-metrika'],
+  modules: ['nuxt-swiper', '@nuxt/ui', '@nuxtjs/color-mode', 'yandex-metrika-module-nuxt3'],
 
   yandexMetrika: {
     id: '97376726',
