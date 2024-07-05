@@ -229,8 +229,6 @@ const setMaxHeight = (el: any) => {
               <div class="event__info-modal">
                 <p class="modal__title">Скидка за рекламу 10%</p>
                 <p class="modal__desc">Прорекламируйте нас в социальных сетях</p>
-                <p class="modal__desc">Срок действия акции неделя до, неделя после.
-                  Предъявите администратору паспорт или свидетельство о рождении для активации акции. </p>
                 <div class="modal__points">
                   <div class="modal__points-item" v-for="item in advPoints" :key="item">
                     <img src="/img/modal-point.svg" alt="" />
