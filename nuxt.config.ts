@@ -28,5 +28,11 @@ export default defineNuxtConfig({
 
   colorMode: {
     preference: 'light'
+  },
+
+  optimization: {
+    splitChunks: {
+      maxSize: 300000
+    }
   }
 })
