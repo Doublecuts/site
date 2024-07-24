@@ -4,7 +4,7 @@
 
 <template>
   <section class="main-barber">
-    <img src="../assets/img/main_back_mobile.jpg" alt="" class="main-barber__mobile">
+    <img src="../assets/img/main_back_mobile.webp" alt="" class="main-barber__mobile">
     <div class="main-barber__text">
       <h1 class="main-barber__text-main">Барбершоп Double cuts</h1>
       <h2 class="main-barber__text-title">
@@ -14,10 +14,10 @@
       </h2>
     </div>
     <div class="main-barber__pictures">
-      <img src="../assets/img/main1.png" alt="" class="main-barber__pictures-item">
-      <img src="../assets/img/main2.png" alt="" class="main-barber__pictures-item">
-      <img src="../assets/img/main3.png" alt="" class="main-barber__pictures-item">
-      <img src="../assets/img/main4.png" alt="" class="main-barber__pictures-item">
+      <img src="../assets/img/main1.webp" alt="" class="main-barber__pictures-item">
+      <img src="../assets/img/main2.webp" alt="" class="main-barber__pictures-item">
+      <img src="../assets/img/main3.webp" alt="" class="main-barber__pictures-item">
+      <img src="../assets/img/main4.webp" alt="" class="main-barber__pictures-item">
     </div>
     <div class="marquee">
       <div class="marquee__item">
@@ -61,7 +61,7 @@
           target="_blank"
           class="main-barber__buttons-order"
       >
-        <img src="../assets/img/order_img.png" alt="">
+        <img src="../assets/img/order_img.webp" alt="">
         <p class="main-barber__buttons-order_desktop">Записаться онлайн</p>
         <p class="main-barber__buttons-order_mobile">Записаться</p>
       </NuxtLink>
@@ -92,7 +92,7 @@
 
 .main-barber{
   height: 100vh;
-  background: url("~/assets/img/main_back.png") no-repeat center top/cover;
+  background: url("~/assets/img/main_back.webp") no-repeat center top/cover;
   display: flex;
   overflow-x: hidden;
 

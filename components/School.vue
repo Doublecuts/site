@@ -6,13 +6,13 @@
   <section class="school section">
     <h2 class="school__title white">Школа барберов</h2>
     <div class="school__block">
-      <img src="../assets/img/school1.jpg" alt="" class="school__block-image">
+      <img src="../assets/img/school1.webp" alt="" class="school__block-image">
       <div class="school__block-text">
         <p class="school__block-text_title text-title">Более <span class="custom-back">100 учеников<span></span></span> уже прошли наши курсы и успешно работают</p>
         <p class="text">Образование в парикмахерской сфере сегодня очень хромает и мы решили все изменить!</p>
         <p class="text">У нас уже есть большой опыт в преподавании. Теперь мы расширяемся и открываем полноценную школу.</p>
       </div>
-      <img src="../assets/img/school2.jpg" alt="" class="school__block-image">
+      <img src="../assets/img/school2.webp" alt="" class="school__block-image">
     </div>
   </section>
 </template>

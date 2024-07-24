@@ -3,81 +3,81 @@
 // const buttonValue = ref<string>('Смотреть все отзывы')
 const yandexImages = ref<{ src: string, href: string }[]>([
   {
-    src: 'r1.png',
+    src: 'r1.webp',
     href: 'https://yandex.ru/maps/org/219417944033/reviews?reviews%5BpublicId%5D=atv813r5ugafe7k2m5wa0ttu8m&utm_source=review',
   },
   {
-    src: 'r2.png',
+    src: 'r2.webp',
     href: 'https://yandex.ru/maps/org/219417944033/reviews?reviews%5BpublicId%5D=f1q7ugvu6wmc3n7a0bqcagfjzc&utm_source=review',
   },
   {
-    src: 'r3.png',
+    src: 'r3.webp',
     href: 'https://yandex.ru/maps/org/219417944033/reviews?reviews%5BpublicId%5D=dtpwk169wfxby966ezgxzbq3t4&utm_source=review',
   },
   {
-    src: 'r4.png',
+    src: 'r4.webp',
     href: 'https://yandex.ru/maps/org/219417944033/reviews?reviews%5BpublicId%5D=yynz7kqak9ujj2w3x7xfk13jnm&utm_source=review',
   },
   {
-    src: 'r5.png',
+    src: 'r5.webp',
     href: 'https://yandex.ru/maps/org/219417944033/reviews?reviews%5BpublicId%5D=1zr0pur5up9a6xdbrf8k56uv94&utm_source=review',
   },
   {
-    src: 'r6.png',
+    src: 'r6.webp',
     href: 'https://yandex.ru/maps/org/219417944033/reviews?reviews%5BpublicId%5D=5273ft370w843ua6m6fnaxakfw&utm_source=review',
   },
 ])
 const instImages = ref<{ src: string }[]>([
   {
-    src: 'i1.png',
+    src: 'i1.webp',
   },
   {
-    src: 'i2.png',
+    src: 'i2.webp',
   },
   {
-    src: '1.png',
+    src: '1.webp',
   },
   {
-    src: '2.png',
+    src: '2.webp',
   },
   {
-    src: '3.png',
+    src: '3.webp',
   },
   {
-    src: '4.png',
+    src: '4.webp',
   },
   {
-    src: '5.png',
+    src: '5.webp',
   },
   {
-    src: '6.png',
+    src: '6.webp',
   },
   {
-    src: '7.png',
+    src: '7.webp',
   },
   {
-    src: '8.png',
+    src: '8.webp',
   },
   {
-    src: '9.png',
+    src: '9.webp',
   },
   {
-    src: '10.png',
+    src: '10.webp',
   },
   {
-    src: '11.png',
+    src: '11.webp',
   },
   {
-    src: '12.png',
+    src: '12.webp',
   },
   {
-    src: '13.png',
+    src: '13.webp',
   },
   {
-    src: '14.png',
+    src: '14.webp',
   },
   {
-    src: '15.png',
+    src: '15.webp',
   },
 ])
 const mySwiper = ref(null)
@@ -221,7 +221,7 @@ const onSwiper2 = (swiper: any) => {
 <!--    <div style="width:762px;height:700px;overflow:hidden;position:relative;"><iframe style="width:100%;height:100%;border:1px solid #e6e6e6;border-radius:8px;box-sizing:border-box" src="https://yandex.ru/maps-reviews-widget/219417944033?comments"></iframe><a href="https://yandex.ru/maps/org/double_cuts/219417944033/" target="_blank" style="box-sizing:border-box;text-decoration:none;color:#b3b3b3;font-size:10px;font-family:YS Text,sans-serif;padding:0 20px;position:absolute;bottom:8px;width:100%;text-align:center;left:0;overflow:hidden;text-overflow:ellipsis;display:block;max-height:14px;white-space:nowrap;padding:0 16px;box-sizing:border-box">Double Cuts на карте Воронежа — Яндекс Карты</a></div>-->
 <!--    <div class="reviews__field">-->
 <!--      <div class="review">-->
-<!--        <img src="/img/reviews/r1.png" alt="">-->
+<!--        <img src="/img/reviews/r1.webp" alt="">-->
 <!--        <NuxtLink-->
 <!--            class="review__button button-outline"-->
 <!--            to="https://yandex.ru/maps/org/219417944033/reviews?reviews%5BpublicId%5D=atv813r5ugafe7k2m5wa0ttu8m&utm_source=review"-->
@@ -231,7 +231,7 @@ const onSwiper2 = (swiper: any) => {
 <!--        </NuxtLink>-->
 <!--      </div>-->
 <!--      <div class="review">-->
-<!--        <img src="/img/reviews/r2.png" alt="">-->
+<!--        <img src="/img/reviews/r2.webp" alt="">-->
 <!--        <NuxtLink-->
 <!--            class="review__button button-outline"-->
 <!--            to="https://yandex.ru/maps/org/219417944033/reviews?reviews%5BpublicId%5D=f1q7ugvu6wmc3n7a0bqcagfjzc&utm_source=review"-->
@@ -241,7 +241,7 @@ const onSwiper2 = (swiper: any) => {
 <!--        </NuxtLink>-->
 <!--      </div>-->
 <!--      <div class="review">-->
-<!--        <img src="/img/reviews/r3.png" alt="">-->
+<!--        <img src="/img/reviews/r3.webp" alt="">-->
 <!--        <NuxtLink-->
 <!--            class="review__button button-outline"-->
 <!--            to="https://yandex.ru/maps/org/219417944033/reviews?reviews%5BpublicId%5D=dtpwk169wfxby966ezgxzbq3t4&utm_source=review"-->
@@ -257,7 +257,7 @@ const onSwiper2 = (swiper: any) => {
 <!--    >-->
 <!--      <div class="reviews__field" v-if="show">-->
 <!--        <div class="review">-->
-<!--          <img src="/img/reviews/r4.png" alt="">-->
+<!--          <img src="/img/reviews/r4.webp" alt="">-->
 <!--          <NuxtLink-->
 <!--              class="review__button button-outline"-->
 <!--              to="https://yandex.ru/maps/org/219417944033/reviews?reviews%5BpublicId%5D=yynz7kqak9ujj2w3x7xfk13jnm&utm_source=review"-->
@@ -267,7 +267,7 @@ const onSwiper2 = (swiper: any) => {
 <!--          </NuxtLink>-->
 <!--        </div>-->
 <!--        <div class="review">-->
-<!--          <img src="/img/reviews/r5.png" alt="">-->
+<!--          <img src="/img/reviews/r5.webp" alt="">-->
 <!--          <NuxtLink-->
 <!--              class="review__button button-outline"-->
 <!--              to="https://yandex.ru/maps/org/219417944033/reviews?reviews%5BpublicId%5D=1zr0pur5up9a6xdbrf8k56uv94&utm_source=review"-->
@@ -277,7 +277,7 @@ const onSwiper2 = (swiper: any) => {
 <!--          </NuxtLink>-->
 <!--        </div>-->
 <!--        <div class="review">-->
-<!--          <img src="/img/reviews/r6.png" alt="">-->
+<!--          <img src="/img/reviews/r6.webp" alt="">-->
 <!--          <NuxtLink-->
 <!--              class="review__button button-outline"-->
 <!--              to="https://yandex.ru/maps/org/219417944033/reviews?reviews%5BpublicId%5D=5273ft370w843ua6m6fnaxakfw&utm_source=review"-->

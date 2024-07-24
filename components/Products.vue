@@ -1,19 +1,19 @@
 <script setup lang="ts">
 const productsShow = ref([
   {
-    src: '/img/products/haircut.jpg',
+    src: '/img/products/haircut.webp',
     title: 'Набор для бритья',
     description: 'Подарочный набор для бритья',
     href: 'https://vk.com/market-204363189?screen=group&w=product-204363189_8905117%2Fquery',
   },
   {
-    src: '/img/products/morgans.jpg',
+    src: '/img/products/morgans.webp',
     title: 'Набор укладочный',
     description: 'Подарочный набор Morgan`s',
     href: 'https://vk.com/market-204363189?screen=group&w=product-204363189_8905104%2Fquery',
   },
   {
-    src: '/img/products/boroda.jpg',
+    src: '/img/products/boroda.webp',
     title: 'Набор для ухода за бородой',
     description: 'Подарочный набор для ухода за бородой',
     href: 'https://vk.com/market-204363189?screen=group&w=product-204363189_8905003%2Fquery',
@@ -22,55 +22,55 @@ const productsShow = ref([
 
 const productsHide = ref([
   {
-    src: '/img/products/max_texture.jpg',
+    src: '/img/products/max_texture.webp',
     title: 'Набор укладочный Max Texture',
     description: 'Премиальный подарочный набор для укладки',
     href: 'https://vk.com/market-204363189?screen=group&w=product-204363189_8905060%2Fquery',
   },
   {
-    src: '/img/products/powder.jpg',
+    src: '/img/products/powder.webp',
     title: 'Набор укладочный',
     description: 'Подарочный набор для укладки',
     href: 'https://vk.com/market-204363189?screen=group&w=product-204363189_8904877%2Fquery',
   },
   {
-    src: '/img/products/shampoo.jpg',
+    src: '/img/products/shampoo.webp',
     title: 'Набор шампуней Morgan`s',
     description: 'Подарочный набор шампуней Morgan`s',
     href: 'https://vk.com/market-204363189?screen=group&w=product-204363189_8904868%2Fquery',
   },
   {
-    src: '/img/products/texture.jpg',
+    src: '/img/products/texture.webp',
     title: 'Набор укладочный Texture',
     description: 'Подарочный набор для легкой укладки',
     href: 'https://vk.com/market-204363189?screen=group&w=product-204363189_8904794%2Fquery',
   },
   {
-    src: '/img/products/ollin.jpg',
+    src: '/img/products/ollin.webp',
     title: 'Набор очищение и уход',
     description: 'Подарочный набор для ухода',
     href: 'https://vk.com/market-204363189?screen=group&w=product-204363189_8904750%2Fquery',
   },
   {
-    src: '/img/products/glina1.jpg',
+    src: '/img/products/glina1.webp',
     title: 'Глина Текстурирующая Морганс',
     description: 'Глина для волос',
     href: 'https://vk.com/market-204363189?screen=group&w=product-204363189_7122069%2Fquery',
   },
   {
-    src: '/img/products/glina2.jpg',
+    src: '/img/products/glina2.webp',
     title: 'Матовая Паста Морганс',
     description: 'С ароматом бразильского апельсина',
     href: 'https://vk.com/market-204363189?screen=group&w=product-204363189_7122068%2Fquery',
   },
   {
-    src: '/img/products/spray.jpg',
+    src: '/img/products/spray.webp',
     title: 'Спрей «Морская соль» Kondor',
     description: 'Спрей для укладки',
     href: 'https://vk.com/market-204363189?screen=group&w=product-204363189_7115791%2Fquery',
   },
   {
-    src: '/img/products/glina3.jpg',
+    src: '/img/products/glina3.webp',
     title: 'Пудра для волос Kapous',
     description: 'Пудра для волос',
     href: 'https://vk.com/market-204363189?screen=group&w=product-204363189_7115789%2Fquery',

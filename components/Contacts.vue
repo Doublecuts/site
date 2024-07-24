@@ -124,8 +124,8 @@ const ui = {
                 </div>
               </div>
             </div>
-            <img src="../assets/img/owner.jpg" alt="" class="owner-card__image desktop">
-            <img src="../assets/img/owner-mobile.jpg" alt="" class="owner-card__image mobile">
+            <img src="../assets/img/owner.webp" alt="" class="owner-card__image desktop">
+            <img src="../assets/img/owner-mobile.webp" alt="" class="owner-card__image mobile">
           </div>
         </template>
       </UTabs>

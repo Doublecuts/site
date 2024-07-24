@@ -23,7 +23,7 @@ const vacations = ref([
         </p>
       </div>
 
-      <img class="vacations__field-img" src="../assets/img/phone.png  " alt="">
+      <img class="vacations__field-img" src="../assets/img/phone.webp  " alt="">
     </div>
   </section>
 </template>

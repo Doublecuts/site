@@ -1,13 +1,13 @@
 <script setup lang="ts">
-import teamSergey from '../public/img/employers/sergey.jpg'
-import teamMichael from '../public/img/employers/michael.jpg'
-import teamAlexander from '../public/img/employers/alexander.jpg'
-import teamVlad from '../public/img/employers/vlad.jpg'
-import teamDmitriy from '../public/img/employers/dmitriy.jpg'
-import teamEvgeniy from '../public/img/employers/evgeniy.jpg'
-import teamVadim from '../public/img/employers/vadim.png'
-import teamNikita from '../public/img/employers/nikita.png'
-import teamRoman from '../public/img/employers/roman.png'
+import teamSergey from '../public/img/employers/sergey.webp'
+import teamMichael from '../public/img/employers/michael.webp'
+import teamAlexander from '../public/img/employers/alexander.webp'
+import teamVlad from '../public/img/employers/vlad.webp'
+import teamDmitriy from '../public/img/employers/dmitriy.webp'
+import teamEvgeniy from '../public/img/employers/evgeniy.webp'
+import teamVadim from '../public/img/employers/vadim.webp'
+import teamNikita from '../public/img/employers/nikita.webp'
+import teamRoman from '../public/img/employers/roman.webp'
 
 const tabs = ref([
   {

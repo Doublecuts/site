@@ -2,43 +2,43 @@
 const mySwiper = ref(null)
 const images = ref<{ src: string }[]>([
   {
-    src: 'p1.jpg'
+    src: 'p1.webp'
   },
   {
-    src: 'p2.jpg'
+    src: 'p2.webp'
   },
   {
-    src: 'p3.jpg'
+    src: 'p3.webp'
   },
   {
-    src: 'p4.jpg'
+    src: 'p4.webp'
   },
   {
-    src: 'p5.jpg'
+    src: 'p5.webp'
   },
   {
-    src: 'p6.jpg'
+    src: 'p6.webp'
   },
   {
-    src: 'p7.jpg'
+    src: 'p7.webp'
   },
   {
-    src: 'p8.jpg'
+    src: 'p8.webp'
   },
   {
-    src: 'p9.jpg'
+    src: 'p9.webp'
   },
   {
-    src: 'p10.jpg'
+    src: 'p10.webp'
   },
   {
-    src: 'p11.jpg'
+    src: 'p11.webp'
   },
   {
-    src: 'p12.jpg'
+    src: 'p12.webp'
   },
   {
-    src: 'p13.jpg'
+    src: 'p13.webp'
   },
 ])
 

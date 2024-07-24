@@ -9,7 +9,7 @@ const hideLoader = () => {
   setTimeout(() => {
     document.querySelector('body').classList.remove('body-hidden')
     show.value = false
-  }, 2000)
+  }, 1000)
 }
 
 onMounted(() => {
@@ -24,7 +24,7 @@ onMounted(() => {
   >
     <div id="preloader" v-if="show">
       <div id="loader"></div>
-      <img class="loader-img" src="../assets/img/logo.png" alt="">
+      <img class="loader-img" src="../assets/img/logo.webp" alt="">
     </div>
   </transition>
 </template>
