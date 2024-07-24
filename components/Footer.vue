@@ -16,9 +16,9 @@ const isOpen = ref(false)
         <div class="payment">
           <p class="payment__text">Принимаем к оплате</p>
           <div class="payment__methods">
-            <img src="@/assets/img/sbp.svg" alt="">
-            <img src="@/assets/img/mir.svg" alt="">
-            <img src="@/assets/img/visa.svg" alt="">
+            <img src="@/assets/img/sbp.svg" alt="" loading="lazy">
+            <img src="@/assets/img/mir.svg" alt="" loading="lazy">
+            <img src="@/assets/img/visa.svg" alt="" loading="lazy">
           </div>
         </div>
       </div>

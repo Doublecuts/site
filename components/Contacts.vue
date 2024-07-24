@@ -53,22 +53,22 @@ const ui = {
                   +7 (900) 933-29-35
                 </NuxtLink>
                 <div class="see__block-line">
-                  <img src="@/assets/img/location.svg" alt="">
+                  <img src="@/assets/img/location.svg" alt="" loading="lazy">
                   <p class="text">Воронеж, улица Карла Маркса 112</p>
                 </div>
                 <div class="see__block-line">
-                  <img src="@/assets/img/clock.svg" alt="">
+                  <img src="@/assets/img/clock.svg" alt="" loading="lazy">
                   <p class="text">Пн-Вс: 10:00-22:00</p>
                 </div>
                 <div class="see__block-line">
-                  <img src="@/assets/img/mail.svg" alt="">
+                  <img src="@/assets/img/mail.svg" alt="" loading="lazy">
                   <p class="text">doublecuts@mail.ru</p>
                 </div>
                 <NuxtLink
                     class="see__block-button button-toggle"
                     to="tel: +7 (900) 933-29-35"
                 >
-                  <img src="@/assets/img/white-phone.svg" alt="">
+                  <img src="@/assets/img/white-phone.svg" alt="" loading="lazy">
                   Позвонить в Double Cuts
                 </NuxtLink>
               </div>
@@ -86,46 +86,46 @@ const ui = {
                     to="https://wa.me/79999139839"
                     target="_blank"
                 >
-                  <img src="../assets/img/wa_gray.svg" alt="">
+                  <img src="../assets/img/wa_gray.svg" alt="" loading="lazy">
                 </NuxtLink>
                 <NuxtLink
                     class="owner-links__item"
                     to="https://vk.com/himmortal"
                     target="_blank"
                 >
-                  <img src="../assets/img/vk_gray.svg" alt="">
+                  <img src="../assets/img/vk_gray.svg" alt="" loading="lazy">
                 </NuxtLink>
                 <NuxtLink
                     class="owner-links__item"
                     to="https://www.instagram.com/barber_cheresh?igsh=MTh5b3JjcGw0ejcybQ=="
                     target="_blank"
                 >
-                  <img src="../assets/img/inst_gray.svg" alt="">
+                  <img src="../assets/img/inst_gray.svg" alt="" loading="lazy">
                 </NuxtLink>
               </div>
               <div class="owner-fake">
                 <div class="owner-fake__top">
                   <div class="owner-fake-button">
                     <p class="text">Похвалить нас</p>
-                    <img src="../assets/img/thumbs-up.svg" alt="">
+                    <img src="../assets/img/thumbs-up.svg" alt="" loading="lazy">
                   </div>
                   <div class="owner-fake-button">
                     <p class="text">Поругать</p>
-                    <img src="../assets/img/thumbs-down.svg" alt="">
+                    <img src="../assets/img/thumbs-down.svg" alt="" loading="lazy">
                   </div>
                 </div>
                 <div class="owner-fake-button">
                   <p class="text">Сотрудничество</p>
-                  <img src="../assets/img/handshake.svg" alt="">
+                  <img src="../assets/img/handshake.svg" alt="" loading="lazy">
                 </div>
                 <div class="owner-fake-button">
                   <p class="text">Замечания по сайту</p>
-                  <img src="../assets/img/alert-circle.svg" alt="">
+                  <img src="../assets/img/alert-circle.svg" alt="" loading="lazy">
                 </div>
               </div>
             </div>
-            <img src="../assets/img/owner.webp" alt="" class="owner-card__image desktop">
-            <img src="../assets/img/owner-mobile.webp" alt="" class="owner-card__image mobile">
+            <img src="../assets/img/owner.webp" alt="" class="owner-card__image desktop" loading="lazy">
+            <img src="../assets/img/owner-mobile.webp" alt="" class="owner-card__image mobile" loading="lazy">
           </div>
         </template>
       </UTabs>

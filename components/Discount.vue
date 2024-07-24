@@ -15,7 +15,7 @@
         Перейти на страницу школы
       </NuxtLink>
 
-      <img class="discount__field-img" src="../assets/img/discount.webp  " alt="">
+      <img class="discount__field-img" src="../assets/img/discount.webp  " alt="" loading="lazy">
     </div>
   </section>
 </template>

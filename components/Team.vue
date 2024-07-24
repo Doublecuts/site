@@ -124,7 +124,7 @@ const ui = {
 <!--            </UCarousel>-->
 
             <div class="members__item" v-for="member in tab.data">
-              <img :src="member.src" alt="" class="members__item-img">
+              <img :src="member.src" alt="" class="members__item-img" loading="lazy">
               <div class="member">
                 <div class="member__info">
                   <p class="text-title"><span class="custom-back">{{ member.name }}<span></span></span></p>

@@ -187,7 +187,7 @@ const onSwiper2 = (swiper: any) => {
               :key="index"
           >
             <div class="review">
-              <img :src="`/img/reviews/${item.src}`" alt="">
+              <img :src="`/img/reviews/${item.src}`" alt="" loading="lazy">
               <NuxtLink
                   class="review__button button-outline"
                   :to="item.href"
@@ -213,7 +213,7 @@ const onSwiper2 = (swiper: any) => {
               v-for="(item, index) in instImages"
               :key="index"
           >
-            <img :src="`/img/reviews/${item.src}`" alt="">
+            <img :src="`/img/reviews/${item.src}`" alt="" loading="lazy">
           </SwiperSlide>
         </Swiper>
       </template>

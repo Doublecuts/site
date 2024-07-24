@@ -6,7 +6,7 @@ const swiperRef = ref(null)
   <section class="about section" id="about">
     <h2 class="about__title">О нас</h2>
     <div class="about__block">
-      <img src="../assets/img/school2.webp" alt="" class="about__block-image">
+      <img src="../assets/img/school2.webp" alt="" class="about__block-image" loading="lazy">
       <Swiper
           :slides-per-view="1"
           :modules="[SwiperNavigation, SwiperPagination]"
@@ -19,7 +19,7 @@ const swiperRef = ref(null)
           <p class="text">DOUBLE CUTS - это место где тебя выслушают и услышат.</p>
           <p class="text">Наши мастера регулярно проходят повышение квалификации, чтобы соответствовать современным запросам клиентов.</p>
           <p class="text">Так же наши мастера являются преподавателями, судя по отзывам, вполне успешно справляются.</p>
-          <img src="../assets/img/logo.webp" alt="" class="about__block-text_image cuts">
+          <img src="../assets/img/logo.webp" alt="" class="about__block-text_image cuts" loading="lazy">
         </SwiperSlide>
         <SwiperSlide class="about__block-text">
           <p class="about__block-text_title text-title">Самый рейтинговый <span class="custom-back">барбершоп<span></span></span> по отзывам Яндекс и 2GIS </p>
@@ -50,7 +50,7 @@ const swiperRef = ref(null)
 <!--        <p class="text">Наши мастера регулярно проходят повышение квалификации, чтобы соответствовать современным запросам клиентов.</p>-->
 <!--        <p class="text">Так же наши мастера являются преподавателями, судя по отзывам, вполне успешно справляются.</p>-->
 <!--      </div>-->
-      <img src="../assets/img/about2.webp" alt="" class="about__block-image">
+      <img src="../assets/img/about2.webp" alt="" class="about__block-image" loading="lazy">
     </div>
   </section>
 </template>

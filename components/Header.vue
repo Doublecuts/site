@@ -81,7 +81,7 @@ const linkClickHandler = () => {
   >
     <div class="header-inner">
       <NuxtLink class="header-inner__logo" to="/">
-        <img src="~/assets/img/logo.webp" alt="">
+        <img src="~/assets/img/logo.webp" alt="" loading="lazy">
       </NuxtLink>
       <nav
           class="nav"
@@ -103,9 +103,10 @@ const linkClickHandler = () => {
               :src="isSoundOn ? '/img/sound_on.svg' : '/img/sound_off.svg'"
               alt=""
               @click="soundHandler"
+              loading="lazy"
           >
         </div>
-        <audio ref="soundRef" controls loop>
+        <audio ref="soundRef" controls loop preload="none">
           <source src="../public/audio/doublecuts.mp3" type="audio/mpeg">
         </audio>
         <NuxtLink
@@ -113,14 +114,14 @@ const linkClickHandler = () => {
             to="https://wa.me/79009332935"
             target="_blank"
         >
-          <img src="~/assets/img/wa.svg" alt="">
+          <img src="~/assets/img/wa.svg" alt="" loading="lazy">
         </NuxtLink>
         <NuxtLink
             class="header-inner__links-item"
             to="https://vk.com/double_cuts_vrn"
             target="_blank"
         >
-          <img src="~/assets/img/vk.svg" alt="">
+          <img src="~/assets/img/vk.svg" alt="" loading="lazy">
         </NuxtLink>
 <!--        <NuxtLink class="header-inner__links-item">-->
 <!--          <img src="~/assets/img/inst.svg" alt="">-->
@@ -129,7 +130,7 @@ const linkClickHandler = () => {
             class="header-inner__links-item"
             to="tel: +7 (900) 933-29-35"
         >
-          <img src="~/assets/img/phone.svg" alt="">
+          <img src="~/assets/img/phone.svg" alt="" loading="lazy">
         </NuxtLink>
         <img
             class="mobile-burger"

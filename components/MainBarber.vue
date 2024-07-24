@@ -4,7 +4,7 @@
 
 <template>
   <section class="main-barber">
-    <img src="../assets/img/main_back_mobile.webp" alt="" class="main-barber__mobile">
+    <img src="../assets/img/main_back_mobile.webp" alt="" class="main-barber__mobile" loading="lazy">
     <div class="main-barber__text">
       <h1 class="main-barber__text-main">Барбершоп Double cuts</h1>
       <h2 class="main-barber__text-title">
@@ -14,10 +14,10 @@
       </h2>
     </div>
     <div class="main-barber__pictures">
-      <img src="../assets/img/main1.webp" alt="" class="main-barber__pictures-item">
-      <img src="../assets/img/main2.webp" alt="" class="main-barber__pictures-item">
-      <img src="../assets/img/main3.webp" alt="" class="main-barber__pictures-item">
-      <img src="../assets/img/main4.webp" alt="" class="main-barber__pictures-item">
+      <img src="../assets/img/main1.webp" alt="" class="main-barber__pictures-item" loading="lazy">
+      <img src="../assets/img/main2.webp" alt="" class="main-barber__pictures-item" loading="lazy">
+      <img src="../assets/img/main3.webp" alt="" class="main-barber__pictures-item" loading="lazy">
+      <img src="../assets/img/main4.webp" alt="" class="main-barber__pictures-item" loading="lazy">
     </div>
     <div class="marquee">
       <div class="marquee__item">
@@ -61,7 +61,7 @@
           target="_blank"
           class="main-barber__buttons-order"
       >
-        <img src="../assets/img/order_img.webp" alt="">
+        <img src="../assets/img/order_img.webp" alt="" loading="lazy">
         <p class="main-barber__buttons-order_desktop">Записаться онлайн</p>
         <p class="main-barber__buttons-order_mobile">Записаться</p>
       </NuxtLink>
@@ -71,7 +71,7 @@
             to="https://go.2gis.com/v6p3a"
             target="_blank"
         >
-          <img src="../assets/img/google.svg" alt="" style="width: 24px; height: 24px">
+          <img src="../assets/img/google.svg" alt="" style="width: 24px; height: 24px" loading="lazy">
           5.0
         </NuxtLink>
         <NuxtLink
@@ -79,7 +79,7 @@
             to="https://yandex.ru/maps/-/CDRCV21A"
             target="_blank"
         >
-          <img src="../assets/img/yandex.svg" alt="">
+          <img src="../assets/img/yandex.svg" alt="" loading="lazy">
           5.0
         </NuxtLink>
       </div>

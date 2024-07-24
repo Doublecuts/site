@@ -107,7 +107,7 @@ const setMaxHeight = (el: any) => {
           :to="product.href"
           target="_blank"
       >
-        <img :src="product.src" alt="" class="product__img">
+        <img :src="product.src" alt="" class="product__img" loading="lazy">
         <div class="product__info">
           <p class="text-title">{{ product.title }}</p>
           <p class="product__info-desc text">{{ product.description }}</p>
@@ -126,7 +126,7 @@ const setMaxHeight = (el: any) => {
             :to="product.href"
             target="_blank"
         >
-          <img :src="product.src" alt="" class="product__img">
+          <img :src="product.src" alt="" class="product__img" loading="lazy">
           <div class="product__info">
             <p class="text-title">{{ product.title }}</p>
             <p class="product__info-desc text">{{ product.description }}</p>

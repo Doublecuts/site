@@ -99,7 +99,7 @@ const setMaxHeight = (el: any) => {
     <h2>Акции</h2>
     <div class="events__block">
       <div class="event">
-        <img class="event__image" src="../assets/img/event.webp" alt="">
+        <img class="event__image" src="../assets/img/event.webp" alt="" loading="lazy">
         <div class="event__info">
           <p class="event__info-title text-title">Скидка на первый визит <span class="custom-back">20%<span></span></span></p>
           <p class="text">Дарим скидку  для новых гостей барбершопа</p>
@@ -115,7 +115,7 @@ const setMaxHeight = (el: any) => {
               <p class="modal__desc">Дарим скидку для новых гостей барбершопа.</p>
               <div class="modal__points">
                 <div class="modal__points-item" v-for="item in newGuestPoints" :key="item">
-                  <img src="/img/modal-point.svg" alt="" />
+                  <img src="/img/modal-point.svg" alt="" loading="lazy"/>
                   <p>{{ item }}</p>
                 </div>
               </div>
@@ -124,7 +124,7 @@ const setMaxHeight = (el: any) => {
                   target="_blank"
                   class="main-barber__buttons-order"
               >
-                <img src="../assets/img/order_img.webp" alt="">
+                <img src="../assets/img/order_img.webp" alt="" loading="lazy">
                 <p class="main-barber__buttons-order_desktop">Записаться онлайн</p>
                 <p class="main-barber__buttons-order_mobile">Записаться</p>
               </NuxtLink>
@@ -134,7 +134,7 @@ const setMaxHeight = (el: any) => {
         </div>
       </div>
       <div class="event">
-        <img class="event__image" src="../assets/img/event.webp" alt="">
+        <img class="event__image" src="../assets/img/event.webp" alt="" loading="lazy">
         <div class="event__info">
           <p class="event__info-title text-title">Приведи друга и получи <span class="custom-back">200р<span></span></span></p>
           <p class="text">Приведи друга, который у нас ещё не был</p>
@@ -151,7 +151,7 @@ const setMaxHeight = (el: any) => {
                 на бонусный счёт в Барбершопе Double Cuts! </p>
               <div class="modal__points">
                 <div class="modal__points-item" v-for="item in friendPoints" :key="item">
-                  <img src="/img/modal-point.svg" alt="" />
+                  <img src="/img/modal-point.svg" alt="" loading="lazy"/>
                   <p>{{ item }}</p>
                 </div>
               </div>
@@ -164,7 +164,7 @@ const setMaxHeight = (el: any) => {
                   target="_blank"
                   class="main-barber__buttons-order"
               >
-                <img src="../assets/img/order_img.webp" alt="">
+                <img src="../assets/img/order_img.webp" alt="" loading="lazy">
                 <p class="main-barber__buttons-order_desktop">Записаться онлайн</p>
                 <p class="main-barber__buttons-order_mobile">Записаться</p>
               </NuxtLink>
@@ -174,7 +174,7 @@ const setMaxHeight = (el: any) => {
         </div>
       </div>
       <div class="event">
-        <img class="event__image" src="../assets/img/event.webp" alt="">
+        <img class="event__image" src="../assets/img/event.webp" alt="" loading="lazy">
         <div class="event__info">
           <p class="event__info-title text-title">Скидка за отзыв до <span class="custom-back">20%<span></span></span></p>
           <p class="text">Оставь отзыв после визита и получи скидку</p>
@@ -190,7 +190,7 @@ const setMaxHeight = (el: any) => {
               <p class="modal__desc">Оставь отзыв после визита и получи скидку</p>
               <div class="modal__points">
                 <div class="modal__points-item" v-for="item in reviewPoints" :key="item">
-                  <img src="/img/modal-point.svg" alt="" />
+                  <img src="/img/modal-point.svg" alt="" loading="lazy"/>
                   <p>{{ item }}</p>
                 </div>
               </div>
@@ -199,7 +199,7 @@ const setMaxHeight = (el: any) => {
                   target="_blank"
                   class="main-barber__buttons-order"
               >
-                <img src="../assets/img/order_img.webp" alt="">
+                <img src="../assets/img/order_img.webp" alt="" loading="lazy">
                 <p class="main-barber__buttons-order_desktop">Записаться онлайн</p>
                 <p class="main-barber__buttons-order_mobile">Записаться</p>
               </NuxtLink>
@@ -215,7 +215,7 @@ const setMaxHeight = (el: any) => {
     >
       <div class="events__block" v-if="show">
         <div class="event">
-          <img class="event__image" src="../assets/img/event.webp" alt="">
+          <img class="event__image" src="../assets/img/event.webp" alt="" loading="lazy">
           <div class="event__info">
             <p class="event__info-title text-title">Скидка за рекламу <span class="custom-back">10%<span></span></span></p>
             <p class="text">Прорекламируй нас в социальных сетях</p>
@@ -231,7 +231,7 @@ const setMaxHeight = (el: any) => {
                 <p class="modal__desc">Прорекламируйте нас в социальных сетях</p>
                 <div class="modal__points">
                   <div class="modal__points-item" v-for="item in advPoints" :key="item">
-                    <img src="/img/modal-point.svg" alt="" />
+                    <img src="/img/modal-point.svg" alt="" loading="lazy"/>
                     <p>{{ item }}</p>
                   </div>
                 </div>
@@ -240,7 +240,7 @@ const setMaxHeight = (el: any) => {
                     target="_blank"
                     class="main-barber__buttons-order"
                 >
-                  <img src="../assets/img/order_img.webp" alt="">
+                  <img src="../assets/img/order_img.webp" alt="" loading="lazy">
                   <p class="main-barber__buttons-order_desktop">Записаться онлайн</p>
                   <p class="main-barber__buttons-order_mobile">Записаться</p>
                 </NuxtLink>
@@ -250,7 +250,7 @@ const setMaxHeight = (el: any) => {
           </div>
         </div>
         <div class="event">
-          <img class="event__image" src="../assets/img/event.webp" alt="">
+          <img class="event__image" src="../assets/img/event.webp" alt="" loading="lazy">
           <div class="event__info">
             <p class="event__info-title text-title">День Рождения</p>
             <p class="text">Получите подарок от нас в день рождения </p>
@@ -268,7 +268,7 @@ const setMaxHeight = (el: any) => {
                   Предъявите администратору паспорт или свидетельство о рождении для активации акции. </p>
                 <div class="modal__points">
                   <div class="modal__points-item" v-for="item in hbPoints" :key="item">
-                    <img src="/img/modal-point.svg" alt="" />
+                    <img src="/img/modal-point.svg" alt="" loading="lazy"/>
                     <p>{{ item }}</p>
                   </div>
                 </div>
@@ -277,7 +277,7 @@ const setMaxHeight = (el: any) => {
                     target="_blank"
                     class="main-barber__buttons-order"
                 >
-                  <img src="../assets/img/order_img.webp" alt="">
+                  <img src="../assets/img/order_img.webp" alt="" loading="lazy">
                   <p class="main-barber__buttons-order_desktop">Записаться онлайн</p>
                   <p class="main-barber__buttons-order_mobile">Записаться</p>
                 </NuxtLink>
