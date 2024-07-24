@@ -71,7 +71,7 @@ import Discount from "../components/Discount.vue";
     <Contacts />
   </main>
   <Footer />
-  <Loader />
+<!--  <Loader />-->
 </template>/
 
 <style lang="scss">
