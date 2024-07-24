@@ -24,7 +24,7 @@ onMounted(() => {
   >
     <div id="preloader" v-if="show">
       <div id="loader"></div>
-      <img class="loader-img" src="../assets/img/logo.webp" alt="" loading="lazy">
+      <img class="loader-img" src="../assets/img/logo.webp" alt="" loading="eager">
     </div>
   </transition>
 </template>

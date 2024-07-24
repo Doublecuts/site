@@ -4,7 +4,7 @@
 
 <template>
   <section class="main-barber">
-    <img src="../assets/img/main_back_mobile.webp" alt="" class="main-barber__mobile" loading="lazy">
+    <img src="../assets/img/main_back_mobile.webp" alt="" class="main-barber__mobile" loading="eager">
     <div class="main-barber__text">
       <h1 class="main-barber__text-main">Барбершоп Double cuts</h1>
       <h2 class="main-barber__text-title">

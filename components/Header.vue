@@ -81,7 +81,7 @@ const linkClickHandler = () => {
   >
     <div class="header-inner">
       <NuxtLink class="header-inner__logo" to="/">
-        <img src="~/assets/img/logo.webp" alt="" loading="lazy">
+        <img src="~/assets/img/logo.webp" alt="" loading="eager">
       </NuxtLink>
       <nav
           class="nav"
