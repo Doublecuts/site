@@ -61,7 +61,7 @@
           target="_blank"
           class="main-barber__buttons-order"
       >
-        <img src="../assets/img/order_img.webp" alt="" loading="lazy">
+        <img src="../assets/img/order_img.webp" alt="" loading="lazy" width="18px" height="18px">
         <p class="main-barber__buttons-order_desktop">Записаться онлайн</p>
         <p class="main-barber__buttons-order_mobile">Записаться</p>
       </NuxtLink>
@@ -71,7 +71,7 @@
             to="https://go.2gis.com/v6p3a"
             target="_blank"
         >
-          <img src="../assets/img/google.svg" alt="" style="width: 24px; height: 24px" loading="lazy">
+          <img src="../assets/img/google.svg" alt="" width="24px" height="24px" loading="lazy">
           5.0
         </NuxtLink>
         <NuxtLink
